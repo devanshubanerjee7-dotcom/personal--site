@@ -71,3 +71,46 @@
                 <div id="skillsGrid" class="skills-grid"></div>
             </div>
         </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section alt">
+            <div class="container">
+                <h2 class="section-title reveal">Projects</h2>
+                <div id="projectsGrid" class="projects-grid"></div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container narrow">
+                <h2 class="section-title reveal">Let's talk</h2>
+                <p class="reveal center">Open to internships, freelance work, and collaborations.</p>
+                <form id="contactForm" class="form reveal" novalidate>
+                    <label>Name
+                        <input type="text" id="name" required />
+                    </label>
+                    <label>Email
+                        <input type="email" id="email" required />
+                    </label>
+                    <label>Message
+                        <textarea id="message" rows="5" required></textarea>
+                    </label>
+                    <p id="formMsg" class="form-msg" role="status"></p>
+                    <button type="submit" class="btn primary">Send message</button>
+                </form>
+                <div class="socials reveal">
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© <span id="year"></span> Devanshu Banerjee. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
