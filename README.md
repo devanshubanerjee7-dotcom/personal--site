@@ -1,40 +1,30 @@
-# Devanshu Banerjee — Digital Builder
+# Responsive Portfolio Website Bianca
 
-A responsive, single-page personal portfolio built with plain HTML, CSS, and vanilla JavaScript. It presents selected development, marketing, and automation work in a dark, interactive interface.
+This project is part of a step-by-step YouTube tutorial in which we build a responsive portfolio website Bianca from scratch using HTML, CSS and JavaScript.
 
-## Run locally
+## 🎬 [Watch the Demo & Code](https://youtu.be/JSFIGIA9Zrk) 
 
-No installation, build step, or server is required. Open `index.html` directly in a browser.
+![preview img](/preview.png) 
 
-Google Fonts are loaded from Google Fonts when a network connection is available. System font fallbacks are included.
+## 📌 Project Features
+- Fully responsive portfolio website Bianca (Mobile First Methodology).
+- Clear and semantic HTML structure.
+- Use of CSS variables and modern JavaScript functions.
+- Smooth scrolling between sections.
+- Scroll animations.
+- Compatible with all modern browsers and devices.
 
-## Features
+## 📦 Download the resources directly
+1. Click the green **code** button.
+2. Click **Download ZIP**.
+3. Extract the ZIP file and open the project in your code editor.
 
-- Responsive layout for desktop, tablet, and mobile.
-- Sticky navigation with an accessible mobile menu.
-- Project category filters and expandable project details.
-- Keyboard-operable skill category tabs.
-- Interactive terminal typing, scroll reveals, and hover treatments.
-- Reduced-motion support, visible keyboard focus, and semantic page structure.
-- No frontend frameworks, libraries, build tools, or fabricated project metrics.
+## 📥 Clone or Fork the repository
+You can **clone** the repository to your local machine or **fork** it in your GitHub account to get all the project's resources.
 
-## Customize
-
-Before publishing, update the placeholder links in `index.html`:
-
-- Replace `YOUR_EMAIL_HERE` with the contact email address. The value is used in the `mailto:` link.
-- Replace `YOUR_LINKEDIN_URL` with the LinkedIn profile URL.
-
-Update project descriptions, technologies, and repository links in the same file as needed. Styling lives in `style.css`; interactions live in `script.js`.
-
-## Project files
-
-```text
-index.html
-style.css
-script.js
-assets/
-  images/
+```bash
+# Clone the repository using HTTPS
+git clone https://github.com/bedimcode/responsive-porfolio-website-Bianca.git
 ```
 
-The current portfolio uses CSS-created project visuals and does not require image assets.
+Designed & developed with ❤️ by **[Bedimcode](https://www.youtube.com/@Bedimcode)** 
