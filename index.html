@@ -1,129 +1,510 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="Experienced professional offering high-quality digital and creative services. Discover my portfolio and work with me to turn your ideas into impactful results.">
-      <meta name="robots" content="index, follow">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Devanshu Banerjee — Computer Science student building software, automation workflows, and growth systems.">
+  <meta name="theme-color" content="#08090C">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Devanshu Banerjee — Builder's Command Center">
+  <meta property="og:description" content="Computer Science Student × Web Developer × Meta Ads Specialist × Automation Builder">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/assets/og-image.png">
 
-      <!--=============== REMIXICONS - Insert link for icons ===============-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+  <title>Devanshu Banerjee — Builder's Command Center</title>
+  <link rel="canonical" href="https://example.com">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-      <!--=============== SWIPER CSS - Insert link for swiperjs ===============-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <!-- Fonts with system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-      <title>Responsive portfolio website | Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER & NAV ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="/index.html" class="nav__logo">Bianca</a>
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__container">
+        <a href="#top" class="nav__wordmark" aria-label="Devanshu Banerjee home">
+          <span class="wordmark">DEVANSHU.</span>
+        </a>
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li>
-                     <a href="#home" class="nav__link active-link">Home</a>
-                  </li>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+        </button>
 
-                  <li>
-                     <a href="#work" class="nav__link">Works</a>
-                  </li>
+        <ul class="nav__menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
+          <li role="none"><a href="#projects" class="nav__link" role="menuitem">Projects</a></li>
+          <li role="none"><a href="#skills" class="nav__link" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#journey" class="nav__link" role="menuitem">Journey</a></li>
+          <li role="none"><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
+          <li role="none"><a href="#contact" class="nav__cta" role="menuitem">Let's Talk</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-                  <li>
-                     <a href="#service" class="nav__link">My Services</a>
-                  </li>
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">COMPUTER SCIENCE • SOFTWARE • AUTOMATION</p>
+          <h1 id="hero-heading" class="hero__heading">Building software. Automating workflows. Creating growth systems.</h1>
+          <p class="hero__subhead">I'm Devanshu, a Computer Science student building web products, automation tools, and practical systems at the intersection of technology and business.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Explore My Work</a>
+            <a href="#contact" class="btn btn--secondary">Let's Connect</a>
+          </div>
+          <p class="hero__availability">
+            <span class="availability__dot" aria-hidden="true"></span>
+            Open to internships, freelance projects, and collaborations
+          </p>
+        </div>
 
-                  <li>
-                     <a href="#skills" class="nav__link">Skills</a>
-                  </li>
-
-                  <li>
-                     <a href="#contact" class="nav__contact">Contact me</a>
-                  </li>
-               </ul>
-
-               <!-- Close -->
-               <button class="nav__close" id="nav-close" aria-label="Close menu">
-                  <i class="ri-close-large-line"></i>
-               </button>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="system-diagram">
+            <div class="system-diagram__node system-diagram__node--software">
+              <span class="system-diagram__icon" aria-hidden="true">◆</span>
+              <span>Software</span>
             </div>
+            <div class="system-diagram__node system-diagram__node--automation">
+              <span class="system-diagram__icon" aria-hidden="true">⟳</span>
+              <span>Automation</span>
+            </div>
+            <div class="system-diagram__node system-diagram__node--growth">
+              <span class="system-diagram__icon" aria-hidden="true">▲</span>
+              <span>Growth</span>
+            </div>
+            <svg class="system-diagram__lines" viewBox="0 0 300 300" preserveAspectRatio="none">
+              <line x1="150" y1="70" x2="70" y2="220" />
+              <line x1="150" y1="70" x2="230" y2="220" />
+              <line x1="70" y1="220" x2="230" y2="220" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <!-- Toggle -->
-            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
-               <i class="ri-menu-line"></i>
-            </button>
-         </nav>
-      </header>
+    <!-- About Section -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="eyebrow section__eyebrow">ABOUT</p>
+        <h2 id="about-heading" class="section__heading">A builder at the intersection of engineering and business.</h2>
+        <div class="about__content">
+          <div class="about__text reveal">
+            <p>I'm a Computer Science student interested in building practical software and systems that solve real problems. My work spans web development, automation, business research, and Meta Ads. I learn by building, testing ideas, and working through the technical details behind a product—from its interface and data model to its integrations and operational workflow.</p>
+            <p>I'm particularly interested in the overlap between engineering and business: how software can reduce repetitive work, how automation can make processes more efficient, and how technology can support measurable growth.</p>
+          </div>
+          <div class="about__meta reveal">
+            <div class="meta-card">
+              <p class="meta-card__label">EDUCATION</p>
+              <p class="meta-card__value">B.Tech Computer Science and Engineering</p>
+              <p class="meta-card__detail">Maharishi University of Information Technology, Noida Campus</p>
+              <p class="meta-card__status">Currently pursuing</p>
+            </div>
+            <div class="meta-card">
+              <p class="meta-card__label">FOCUS</p>
+              <p class="meta-card__value">Software, Automation & Growth Systems</p>
+              <p class="meta-card__detail">Web products • Meta Ads • Lead generation • AI-agent workflows</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!-- CUSTOM CURSOR -->
+    <!-- Engineering Approach -->
+    <section class="section approach" id="approach" aria-labelledby="approach-heading">
+      <div class="container">
+        <p class="eyebrow section__eyebrow">HOW I THINK</p>
+        <h2 id="approach-heading" class="section__heading">Engineering approach</h2>
+        <ol class="approach__list">
+          <li class="approach__item reveal">
+            <span class="approach__number">01</span>
+            <div class="approach__body">
+              <h3>Understand the problem</h3>
+              <p>Identify the actual user, business constraint, and desired outcome.</p>
+            </div>
+          </li>
+          <li class="approach__item reveal">
+            <span class="approach__number">02</span>
+            <div class="approach__body">
+              <h3>Design the system</h3>
+              <p>Break the problem into components, data flows, interfaces, and dependencies.</p>
+            </div>
+          </li>
+          <li class="approach__item reveal">
+            <span class="approach__number">03</span>
+            <div class="approach__body">
+              <h3>Build and test</h3>
+              <p>Implement the smallest useful version, verify behavior, and address failures.</p>
+            </div>
+          </li>
+          <li class="approach__item reveal">
+            <span class="approach__number">04</span>
+            <div class="approach__body">
+              <h3>Improve through evidence</h3>
+              <p>Use testing, feedback, and measurable observations to decide what to improve next.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-         
-         <!--==================== HOME SECTION ====================-->
-         <section class="home section" id="home">
-            
-         </section>
+    <!-- Projects Section -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="eyebrow section__eyebrow">SELECTED WORK</p>
+        <h2 id="projects-heading" class="section__heading">Projects I have built or am actively developing.</h2>
 
-         <!--==================== ABOUT SECTION ====================-->
-         <section class="about section">
-            
-         </section>
+        <div class="project-grid">
+          <!-- Project 01 -->
+          <article class="project-card reveal">
+            <div class="project-card__visual project-card__visual--deevuh" aria-hidden="true">
+              <div class="project-card__diagram">
+                <div class="deevuh-stack">
+                  <div class="deevuh-stack__layer">Storefront</div>
+                  <div class="deevuh-stack__layer">Admin Panel</div>
+                  <div class="deevuh-stack__layer">Payments & Auth</div>
+                  <div class="deevuh-stack__layer">Database & Media</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Deevuh — Fashion E-commerce</h3>
+                <span class="project-card__status project-card__status--active">In development</span>
+              </div>
+              <p class="project-card__description">A fashion e-commerce product engineering project involving storefront functionality, backend data, authentication, payments, media handling, and administrative workflows.</p>
+              <div class="project-card__block">
+                <p class="project-card__label">What I built or explored</p>
+                <p>Product and size management, pricing, descriptions, order workflows, customer data, abandoned-cart tracking, revenue monitoring, promotional codes, coupons, and payment integration using Next.js, Supabase, Cloudinary, Prisma, PayU, Resend, and Google authentication.</p>
+              </div>
+              <div class="project-card__block">
+                <p class="project-card__label">Note</p>
+                <p class="project-card__note">Some integrations and capabilities are implemented; others are planned, tested, or pending verification. Not all features are production-ready.</p>
+              </div>
+              <div class="project-card__stack">
+                <span class="tag">Next.js</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Cloudinary</span>
+                <span class="tag">Prisma</span>
+                <span class="tag">PayU</span>
+                <span class="tag">Resend</span>
+                <span class="tag">Google Auth</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/Devanshu28373/Deevuh" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--primary">View on GitHub</a>
+              </div>
+            </div>
+          </article>
 
-         <!--==================== WORK SECTION ====================-->
-         <section class="work section" id="work">
-            
-         </section>
+          <!-- Project 02 -->
+          <article class="project-card reveal">
+            <div class="project-card__visual project-card__visual--pipeline" aria-hidden="true">
+              <div class="pipeline">
+                <div class="pipeline__step">Discovery</div>
+                <div class="pipeline__arrow" aria-hidden="true">→</div>
+                <div class="pipeline__step">Collection</div>
+                <div class="pipeline__arrow" aria-hidden="true">→</div>
+                <div class="pipeline__step">Qualification</div>
+                <div class="pipeline__arrow" aria-hidden="true">→</div>
+                <div class="pipeline__step">Prioritization</div>
+                <div class="pipeline__arrow" aria-hidden="true">→</div>
+                <div class="pipeline__step">Outreach</div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Meta Ads Client Acquisition System</h3>
+                <span class="project-card__status project-card__status--active">In development</span>
+              </div>
+              <p class="project-card__description">A system designed to identify and qualify potential businesses for Facebook and Instagram advertising services.</p>
+              <div class="project-card__block">
+                <p class="project-card__label">Workflow</p>
+                <p>Discovery → Data Collection → Qualification → Prioritization → Personalized Outreach. The focus is on the engineering and business logic behind the pipeline rather than claiming automatic customer generation.</p>
+              </div>
+              <div class="project-card__block">
+                <p class="project-card__label">Note</p>
+                <p class="project-card__note">This is a workflow and system design project. No conversion rates, lead counts, client revenue, or campaign results are claimed.</p>
+              </div>
+              <div class="project-card__stack">
+                <span class="tag">Meta Ads</span>
+                <span class="tag">Lead Qualification</span>
+                <span class="tag">Outreach Workflow</span>
+              </div>
+            </div>
+          </article>
 
-         <!--==================== SERVICES SECTION ====================-->
-         <section class="services section" id="service">
-            
-         </section>
+          <!-- Project 03 -->
+          <article class="project-card reveal">
+            <div class="project-card__visual project-card__visual--crawler" aria-hidden="true">
+              <div class="crawler-flow">
+                <div class="crawler-flow__stage">Discover</div>
+                <div class="crawler-flow__stage">Crawl</div>
+                <div class="crawler-flow__stage">Extract</div>
+                <div class="crawler-flow__stage">Clean</div>
+                <div class="crawler-flow__stage">Output</div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Meta Lead Agent</h3>
+                <span class="project-card__status project-card__status--active">In development</span>
+              </div>
+              <p class="project-card__description">A JavaScript-based business research and lead collection tool using Crawlee and CheerioCrawler.</p>
+              <div class="project-card__block">
+                <p class="project-card__label">What it does</p>
+                <p>Crawls public business websites to extract titles, contact information, email addresses, phone links, Instagram and Facebook links, contact pages, and structures the collected data into JSON.</p>
+              </div>
+              <div class="project-card__block">
+                <p class="project-card__label">Responsible use</p>
+                <p class="project-card__note">Respect website terms, access controls, rate limits, privacy requirements, and applicable laws. AI-based qualification, orchestration, and automated outreach are treated as separate stages unless verified.</p>
+              </div>
+              <div class="project-card__stack">
+                <span class="tag">Node.js</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Crawlee</span>
+                <span class="tag">CheerioCrawler</span>
+                <span class="tag">JSON</span>
+              </div>
+              <div class="project-card__actions">
+                <span class="project-card__placeholder">Repository link to be verified before publication</span>
+              </div>
+            </div>
+          </article>
 
-         <!--==================== SKILLS SECTION ====================-->
-         <section class="skills section" id="skills">
-            
-         </section>
+          <!-- Project 04 -->
+          <article class="project-card reveal">
+            <div class="project-card__visual project-card__visual--agents" aria-hidden="true">
+              <div class="agent-grid">
+                <div class="agent-grid__cell"></div>
+                <div class="agent-grid__cell"></div>
+                <div class="agent-grid__cell"></div>
+                <div class="agent-grid__cell"></div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Agency Agents</h3>
+                <span class="project-card__status project-card__status--exploration">Exploration</span>
+              </div>
+              <p class="project-card__description">An AI-agent and automation-related codebase I am exploring or developing.</p>
+              <div class="project-card__block">
+                <p class="project-card__label">Status</p>
+                <p class="project-card__note">Description provisional. Exact purpose, architecture, and completed features need to be supplied before this section is finalized.</p>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/Devanshu28373/agency-agents" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--primary">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-         <!--==================== TESTIMONIALS SECTION ====================-->
-         <section class="testimonials section">
-            
-         </section>
+    <!-- Skills Section -->
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="eyebrow section__eyebrow">TECHNICAL TOOLKIT</p>
+        <h2 id="skills-heading" class="section__heading">Tools and domains I work with.</h2>
+        <p class="section__subtext">Listed by practical area. No arbitrary proficiency scores—just tools I have used, studied, or actively explored.</p>
 
-         <!--==================== CONTACT SECTION ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
-      </main>
+        <div class="skills__grid">
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Frontend and web development</h3>
+            <ul class="skill-group__list">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">Next.js</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Backend and data</h3>
+            <ul class="skill-group__list">
+              <li class="tag">Node.js</li>
+              <li class="tag">Supabase</li>
+              <li class="tag">PostgreSQL workflows</li>
+              <li class="tag">Prisma</li>
+              <li class="tag">Authentication & API integration</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Automation and data collection</h3>
+            <ul class="skill-group__list">
+              <li class="tag">Crawlee</li>
+              <li class="tag">CheerioCrawler</li>
+              <li class="tag">Web data extraction</li>
+              <li class="tag">Structured JSON processing</li>
+              <li class="tag">AI-assisted qualification workflows</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Marketing and growth</h3>
+            <ul class="skill-group__list">
+              <li class="tag">Meta Ads: Facebook & Instagram</li>
+              <li class="tag">Prospect research</li>
+              <li class="tag">Lead qualification</li>
+              <li class="tag">Personalized outreach workflows</li>
+              <li class="tag">Campaign strategy & optimization</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Infrastructure and security</h3>
+            <ul class="skill-group__list">
+              <li class="tag">Git & GitHub</li>
+              <li class="tag">Linux environments</li>
+              <li class="tag">Docker exposure</li>
+              <li class="tag">Application security fundamentals</li>
+              <li class="tag">Cybersecurity learning</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Tools and integrations</h3>
+            <ul class="skill-group__list">
+              <li class="tag">Cloudinary</li>
+              <li class="tag">PayU</li>
+              <li class="tag">Resend</li>
+              <li class="tag">Google authentication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
+    <!-- Journey Section -->
+    <section class="section journey" id="journey" aria-labelledby="journey-heading">
+      <div class="container">
+        <p class="eyebrow section__eyebrow">CURRENT DIRECTION</p>
+        <h2 id="journey-heading" class="section__heading">Learning and building.</h2>
+        <p class="section__subtext">Active development areas, presented as learning directions rather than completed qualifications.</p>
 
-      <!--========== SCROLL UP ==========-->
-      
+        <div class="journey__grid">
+          <article class="journey-card reveal">
+            <span class="journey-card__marker" aria-hidden="true"></span>
+            <h3>Computer Science fundamentals</h3>
+            <p>Building a strong base in software engineering, algorithms, and system design.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="journey-card__marker" aria-hidden="true"></span>
+            <h3>Java and full-stack development</h3>
+            <p>Expanding into Java-based application development and full-stack workflows.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="journey-card__marker" aria-hidden="true"></span>
+            <h3>Modern web applications</h3>
+            <p>Practicing with Next.js, serverless backends, databases, and authentication.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="journey-card__marker" aria-hidden="true"></span>
+            <h3>Automation and AI-agent workflows</h3>
+            <p>Exploring tools like Crawlee and agent-style systems for business research and operations.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="journey-card__marker" aria-hidden="true"></span>
+            <h3>Cybersecurity fundamentals</h3>
+            <p>Learning application security and authorized security testing practices.</p>
+          </article>
+          <article class="journey-card reveal">
+            <span class="journey-card__marker" aria-hidden="true"></span>
+            <h3>Meta Ads and acquisition systems</h3>
+            <p>Building workflows to identify, qualify, and reach businesses for advertising services.</p>
+          </article>
+        </div>
 
-      <!--=============== SCROLLREVEAL - Insert link for animations ===============-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-      
-      <!--=============== TYPED JS - Insert link for text animations ===============-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
-      
-      <!--=============== SWIPER JS - Insert link for swiperjs ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <div class="current-build reveal">
+          <p class="current-build__label">CURRENTLY BUILDING AND LEARNING</p>
+          <p>Deevuh e-commerce platform, Meta Lead Agent crawler, and deepening full-stack + automation skills.</p>
+        </div>
+      </div>
+    </section>
 
-      <!--=============== EMAIL JS - Insert link to send emails ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- GitHub Section -->
+    <section class="section github-section" id="github" aria-labelledby="github-heading">
+      <div class="container">
+        <p class="eyebrow section__eyebrow">TECHNICAL CREDIBILITY</p>
+        <h2 id="github-heading" class="section__heading">See the actual work.</h2>
+        <p class="section__subtext">Code, experiments, and works in progress live on GitHub.</p>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+        <div class="github-card reveal">
+          <div class="github-card__profile">
+            <div class="github-card__avatar" aria-hidden="true">DB</div>
+            <div>
+              <p class="github-card__name">Devanshu28373</p>
+              <p class="github-card__handle">github.com/Devanshu28373</p>
+            </div>
+          </div>
+          <div class="github-card__repos">
+            <a href="https://github.com/Devanshu28373/Deevuh" target="_blank" rel="noopener noreferrer" class="github-card__repo">
+              <span class="github-card__repo-name">Deevuh</span>
+              <span class="github-card__repo-desc">Fashion e-commerce project</span>
+            </a>
+            <a href="https://github.com/Devanshu28373/agency-agents" target="_blank" rel="noopener noreferrer" class="github-card__repo">
+              <span class="github-card__repo-name">Agency Agents</span>
+              <span class="github-card__repo-desc">AI-agent / automation exploration</span>
+            </a>
+          </div>
+          <a href="https://github.com/Devanshu28373" target="_blank" rel="noopener noreferrer" class="btn btn--secondary github-card__cta">Visit GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="eyebrow section__eyebrow">COLLABORATION</p>
+        <h2 id="contact-heading" class="section__heading">Have a problem worth building for?</h2>
+        <p class="section__subtext">I'm interested in internships, practical engineering challenges, freelance opportunities, and collaborations where technology can make a measurable difference.</p>
+
+        <div class="contact__grid reveal">
+          <div class="contact-card">
+            <p class="contact-card__label">EMAIL</p>
+            <a href="mailto:hello@example.com" class="contact-card__value contact-card__value--email" id="email-link">hello@example.com</a>
+            <p class="contact-card__note">Replace with your real address before publishing.</p>
+            <button type="button" class="btn btn--small btn--secondary contact-card__copy" id="copy-email" aria-label="Copy email address" disabled>Copy email</button>
+          </div>
+          <div class="contact-card">
+            <p class="contact-card__label">GITHUB</p>
+            <a href="https://github.com/Devanshu28373" target="_blank" rel="noopener noreferrer" class="contact-card__value">github.com/Devanshu28373</a>
+          </div>
+          <div class="contact-card">
+            <p class="contact-card__label">LINKEDIN</p>
+            <span class="contact-card__value contact-card__value--placeholder">Add verified URL</span>
+            <p class="contact-card__note">Add your LinkedIn URL once verified.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <p class="footer__name">Devanshu Banerjee</p>
+        <p class="footer__tagline">I don't just learn technology. I use it to build systems that solve real problems.</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://github.com/Devanshu28373" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+        <a href="#" class="footer__link footer__link--placeholder" aria-disabled="true" tabindex="-1">LinkedIn</a>
+        <a href="#top" class="footer__link footer__link--top" id="back-to-top">Back to top</a>
+      </div>
+      <p class="footer__legal">© <span id="current-year">2026</span> Devanshu Banerjee. Built with purpose.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
